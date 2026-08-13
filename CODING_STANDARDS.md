@@ -66,11 +66,3 @@ Comments explain why something is done, not what the code is doing.
   a single commit; when a change spans two types, split it.
 - Subject line: imperative mood ("fix", not "fixes" or "fixed"), short
   enough to fit one line, followed by a blank line and detail in the body.
-
-## Decisions
-
-A substantive decision earns an Architecture Decision Record: one decision,
-one or two pages, written as a conversation with a future developer —
-Context, Decision ("We will …"), Status, Consequences. Record it where the
-repo keeps its decision records; a behavioural fact worth preserving goes in
-the repo's research/notes register.
