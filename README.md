@@ -8,7 +8,7 @@ as more files are added.
 ## Copy-paste
 
 ```markdown
-Read this file first: <link>
+Read the house standard first: <link>
 ```
 
 ## Links
@@ -16,8 +16,10 @@ Read this file first: <link>
 <details>
 <summary>Current files</summary>
 
+- the coding standard
+
 ```markdown
-https://github.com/S1NXIAN/templates/blob/main/CODING_STANDARDS.md — the coding standard
+https://github.com/S1NXIAN/templates/blob/main/CODING_STANDARDS.md
 ```
 
 </details>
