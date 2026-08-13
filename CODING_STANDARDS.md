@@ -7,7 +7,7 @@ CODING_STANDARDS.md references this file by link and may add stack-specific
 rules. Follow the rules below in any repo that references this file, as
 amended by that repo's own standards: when the two disagree, the repo's
 document wins — record the divergence in the repo's docs, never edit this
-canonical copy.
+canonical copy. Editing this file happens here, in the templates repo.
 
 ## Naming
 
