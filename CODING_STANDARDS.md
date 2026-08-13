@@ -3,10 +3,10 @@
 # Last updated: 2026-08-13
 
 Read this before writing or changing code in this repo. These rules are
-language-agnostic; a project may extend them with stack-specific rules, and
-when this file and a repo-specific document disagree, the repo-specific
-document wins — fold the difference back into the project's copy of this
-file, never into the canonical bootstrap.
+language-agnostic; a repo may extend them with stack-specific rules. When
+this file and a repo-specific document disagree, the repo-specific document
+wins — record the divergence in the repo's own docs; never edit the
+canonical bootstrap, which lives and is maintained in the templates repo.
 
 ## Naming
 
@@ -20,9 +20,9 @@ documentation a thing has.
   `validate_input`); classes, structs, and types are nouns (`UserSession`,
   `CommandRegistry`).
 - No vague names: `data`, `stuff`, `result`, `tmp2` do not survive review.
-- One concept, one name. The repo's glossary records the ubiquitous language;
-  when code and glossary disagree, one of them is wrong — fix one, never
-  both.
+- One concept, one name. The repo's glossary, where the repo keeps one,
+  records the ubiquitous language; when code and glossary disagree, one of
+  them is wrong — fix one, never both.
 - Abbreviations are allowed only when they are the domain's own words
   (SSID, ADR, MCP); never coin private abbreviations.
 
