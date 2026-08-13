@@ -5,7 +5,8 @@
 Read this before writing or changing code in this repo. These rules are
 language-agnostic; a project may extend them with stack-specific rules, and
 when this file and a repo-specific document disagree, the repo-specific
-document wins — then update this file to match.
+document wins — fold the difference back into the project's copy of this
+file, never into the canonical bootstrap.
 
 ## Naming
 
@@ -52,6 +53,9 @@ Comments explain why something is done, not what the code is doing.
   for replacing it.
 - Functions that return data print nothing: emit data on stdout, send
   messaging elsewhere, return status.
+- One behaviour, one home: changing a behaviour is a one-file edit. If a
+  change forces identical edits across many files, the seam is wrong — fix
+  the seam, not the callers.
 - The environment is a source of truth: one-file, one-command lookups stay
   in config and `--help`; this file records only the unwritten conventions.
 
@@ -60,9 +64,10 @@ Comments explain why something is done, not what the code is doing.
 - Conventional Commits, per the spec at conventionalcommits.org: a type, an
   optional scope, a description (`fix(parser): handle empty input`). The
   spec mandates only `fix` and `feat`; this repo's house set is
-  `feat`, `fix`, `refactor`, `docs`, `test` — and lower-case types, a house
+  `feat`, `fix`, `refactor`, `docs`, `test` — a type outside the set is
+  fine when it plainly fits (`perf`, `build`); lower-case types are a house
   convention, not a spec rule.
 - One logical change per commit: a single logical change is contained within
   a single commit; when a change spans two types, split it.
-- Subject line: imperative mood ("fix", not "fixes" or "fixed"), short
-  enough to fit one line, followed by a blank line and detail in the body.
+- Subject line: imperative mood ("fix", not "fixes" or "fixed"), 50
+  characters or fewer, followed by a blank line and detail in the body.
