@@ -2,17 +2,10 @@
 
 # Last updated: 2026-08-13
 
-This is the canonical, language-agnostic coding standards. A repo's own
-CODING_STANDARDS.md references this file by link and may add stack-specific
-rules. Follow the rules below in any repo that references this file, as
-amended by that repo's own standards: when the two disagree, the repo's
-document wins — record the divergence in the repo's docs, never edit this
-canonical copy. Editing this file happens here, in the templates repo.
+These rules are language-agnostic; a repo's own standards may extend or
+override them.
 
 ## Naming
-
-A good name is the best documentation — the first and most important
-documentation a thing has.
 
 - Names reveal intent: a name tells you why a thing exists, what it does,
   and how it is used. A name that needs a comment to explain it is a naming
@@ -29,9 +22,8 @@ documentation a thing has.
 
 ## Comments
 
-A comment provides information the code itself cannot contain — why the code
+A comment provides information the code itself cannot contain: why the code
 is there, which invariant it maintains, which failure mode a guard prevents.
-Comments explain why something is done, not what the code is doing.
 
 - The one mandatory comment is a function contract: what it does, its
   signature, return semantics — present tense, the current invariant, never
@@ -57,8 +49,6 @@ Comments explain why something is done, not what the code is doing.
 - One behaviour, one home: changing a behaviour is a one-file edit. If a
   change forces identical edits across many files, the seam is wrong — fix
   the seam, not the callers.
-- The environment is a source of truth: one-file, one-command lookups stay
-  in config and `--help`; this file records only the unwritten conventions.
 
 ## Git
 
