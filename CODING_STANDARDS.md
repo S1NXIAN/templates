@@ -2,11 +2,12 @@
 
 # Last updated: 2026-08-13
 
-Read this before writing or changing code in this repo. These rules are
-language-agnostic; a repo may extend them with stack-specific rules. When
-this file and a repo-specific document disagree, the repo-specific document
-wins — record the divergence in the repo's own docs; never edit the
-canonical bootstrap, which lives and is maintained in the templates repo.
+This is the canonical, language-agnostic coding standards. A repo's own
+CODING_STANDARDS.md references this file by link and may add stack-specific
+rules. Follow the rules below in any repo that references this file, as
+amended by that repo's own standards: when the two disagree, the repo's
+document wins — record the divergence in the repo's docs, never edit this
+canonical copy.
 
 ## Naming
 
@@ -63,7 +64,7 @@ Comments explain why something is done, not what the code is doing.
 
 - Conventional Commits, per the spec at conventionalcommits.org: a type, an
   optional scope, a description (`fix(parser): handle empty input`). The
-  spec mandates only `fix` and `feat`; this repo's house set is
+  spec mandates only `fix` and `feat`; the house set is
   `feat`, `fix`, `refactor`, `docs`, `test` — a type outside the set is
   fine when it plainly fits (`perf`, `build`); lower-case types are a house
   convention, not a spec rule.
