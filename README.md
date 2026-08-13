@@ -9,9 +9,6 @@ as more files are added.
 
 ```markdown
 Read this file first: <link>
-
-It is the house coding standard. Rules in this repo override it; where
-this repo is silent, it wins.
 ```
 
 ## Links
